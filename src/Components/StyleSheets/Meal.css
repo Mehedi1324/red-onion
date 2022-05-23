@@ -1,0 +1,16 @@
+.food__card img {
+  width: 200px;
+}
+.food__card {
+  border-radius: 40px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  height: 450px;
+}
+
+.food__card:hover {
+  background-color: white;
+  transition: transform 0.2s; /* Animation */
+  box-shadow: 6px 14px 28px -5px black;
+  box-shadow: 10px black;
+}

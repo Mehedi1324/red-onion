@@ -1,0 +1,26 @@
+.hero__section {
+  text-align: center;
+  background-image: url('../../Components/CompImg/bannerbackground.jpg');
+  background-color: #916c6c;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-weight: 700;
+  color: rgba(251, 0, 58, 0.993);
+  font-size: 50px;
+  text-shadow: #916c6c;
+}
+.search__input {
+  width: 35% !important;
+  margin-top: 50px;
+}
+.search__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

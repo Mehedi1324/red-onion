@@ -1,0 +1,19 @@
+.footer {
+  background-color: #191919;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main__container {
+  width: 1080px;
+  color: white;
+}
+.f_logo {
+  width: 200px;
+}
+.policy {
+  text-align: right;
+}
+.row ul li {
+  list-style: none;
+  font-size: 14px;
+}

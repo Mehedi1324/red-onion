@@ -1,0 +1,7 @@
+.registerPage {
+  background-image: url('../CompImg/bannerbackground.jpg');
+  background-size: cover;
+}
+.reg_container {
+  text-align: center;
+}
