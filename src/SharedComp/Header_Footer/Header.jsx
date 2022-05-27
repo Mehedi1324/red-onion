@@ -1,14 +1,14 @@
 import React from 'react';
 import { Button, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-import h_logo from '../../Components/CompImg/h_logo.png';
+import h_logo from '../../Components/CompImg/f_logo.png';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import useAuth from '../Hooks/useAuth';
 const Header = () => {
   const { user, logout } = useAuth();
   return (
     <div>
-      <Navbar bg="light" variant="light" className="p-0" sticky="top">
+      <Navbar bg="dark" className="p-0" fixed="top">
         <div className="d-flex w-100 justify-content-between px-3">
           <div>
             <Nav.Link as={NavLink} to="/">
@@ -23,7 +23,7 @@ const Header = () => {
             }}
           >
             <Nav.Link as={NavLink} to="/orders">
-              <ShoppingCartIcon />
+              <ShoppingCartIcon style={{ color: 'white' }} />
             </Nav.Link>
             {!user.email ? (
               <Nav.Link as={NavLink} to="/login">

@@ -1,43 +1,63 @@
 import React from 'react';
 import '../Header_Footer/Footer.css';
 import logo from '../../Components/CompImg/f_logo.png';
+import { Col, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <div className="footer">
       <div className="main__container mx-auto py-3">
-        <div className="row pb-5">
-          <div className="col-12 col-md-6 col-lg-6" md>
-            <img className="f_logo" src={logo} alt="" />
-          </div>
-          <div className="col-6 col-md-3 col-lg-3" md>
-            <ul>
-              <li>About Online Food</li>
-              <li>Read Our blogs</li>
-              <li>Sign Up to delivery</li>
-              <li>Add Your Restaurant</li>
-            </ul>
-          </div>
-          <div className="col-6 col-md-3 col-lg-3" md>
-            <ul>
-              <li>Get Help</li>
-              <li>Read FAQs</li>
-              <li>View all Cities</li>
-              <li>Restaurants near me</li>
-            </ul>
-          </div>
-        </div>
+        <Row>
+          <Col md={5} lg={6} sm={6}>
+            <div className="logo">
+              <img className="f_logo" src={logo} alt="" />
+            </div>
+          </Col>
+          <Col md={4} lg={3} sm={3} className="row1Col">
+            <div className="menu1" md>
+              <Link to="/">About Online Food</Link>
+              <br />
+              <Link to="/">Read Our blogs</Link>
+              <br />
+              <Link to="/">Sign Up to delivery</Link>
+              <br />
+              <Link to="/">Add Your Restaurant</Link>
+              <br />
+            </div>
+          </Col>
 
-        <div className="row">
-          <div className="col-6 col-md-6 col-lg-6" md>
+          <Col md={3} lg={3} sm={3} className="row1Col">
+            <div className="menu1" md>
+              <Link to="/">Get Help</Link>
+              <br />
+              <Link to="/">Read FAQs</Link>
+              <br />
+              <Link to="/">View all Cities</Link>
+              <br />
+              <Link to="/">Restaurants near me</Link>
+              <br />
+            </div>
+          </Col>
+        </Row>
+        <Row className="py-5">
+          <Col md={6} lg={6} sm={6}>
+            <div className="copyRight" md>
+              {' '}
+              <p className="copy">copyright © Online food</p>
+            </div>
+          </Col>
+          <Col md={6} lg={6} sm={6}>
             {' '}
-            <p>copyright @copyright Online food</p>
-          </div>
-          <div className="col-6 col-md-6 col-lg-6" md>
-            <p className="policy">
-              Privary Policy. <span className="mx-4">Terms of Use</span> Pricing
-            </p>
-          </div>
-        </div>
+            <div className="rowPolicy">
+              <div className="">
+                <p className="policy">
+                  Privary Policy. <span className="mx-4">Terms of Use</span>{' '}
+                  Pricing
+                </p>
+              </div>
+            </div>
+          </Col>
+        </Row>
       </div>
     </div>
   );

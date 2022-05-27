@@ -1,7 +1,68 @@
 .registerPage {
-  background-image: url('../CompImg/bannerbackground.jpg');
-  background-size: cover;
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 10px;
 }
 .reg_container {
-  text-align: center;
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+  align-items: center;
+  margin: auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 150px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.cover {
+  width: 65%;
+  margin: auto;
+}
+.reg_container h3 {
+  float: left;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.regiInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 1px solid rgb(231, 229, 229);
+  border-radius: 5px;
+  box-shadow: 1px 0px 8px -3px black;
+  background-color: #f8f9fa;
+}
+.regiBtn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 0px 8px -3px black;
+  font-weight: 600;
+  font-size: 18px;
+}
+@media only screen and (max-width: 600px) {
+  .regiInput {
+    width: 90%;
+  }
+  .regiBtn {
+    width: 90%;
+  }
+  .reg_container {
+    width: 90% !important;
+    margin-top: 50px !important;
+  }
+  .regiForm h3 {
+    margin-left: 5% !important;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .inputBox {
+    width: 60%;
+  }
+  .inputBtn {
+    width: 60%;
+  }
+  .loginPage {
+    width: 90%;
+  }
 }

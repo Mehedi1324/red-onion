@@ -9,6 +9,8 @@ import Footer from './SharedComp/Header_Footer/Footer';
 import Register from './Components/Contents/Register';
 import AuthProvider from './SharedComp/Hooks/AuthProvider';
 import PrivateRoute from './SharedComp/PrivateRoute';
+import YourAddress from './Components/Contents/YourAddress';
+import DeliveryInfo from './Components/Contents/DeliveryInfo';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/yourInfo" element={<YourAddress />} />
+          <Route path="/deliveryInfo" element={<DeliveryInfo />} />
         </Routes>
         <Footer />
       </Router>

@@ -1,10 +1,10 @@
 const firebaseConfig = {
-  apiKey: 'AIzaSyC4UBvgAHO9APgFRocQEh8AwdLr3X5OmGE',
-  authDomain: 'red-onion-74940.firebaseapp.com',
-  projectId: 'red-onion-74940',
-  storageBucket: 'red-onion-74940.appspot.com',
-  messagingSenderId: '200664178703',
-  appId: '1:200664178703:web:2fa8f81c9d9dd0ae27437a',
-  measurementId: 'G-KJCETNXZV2',
+  apiKey: process.env.REACT_APP_API_KEYS,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 };
 export default firebaseConfig;

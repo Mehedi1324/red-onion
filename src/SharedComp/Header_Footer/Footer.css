@@ -1,10 +1,11 @@
 .footer {
   background-color: #191919;
+
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 .main__container {
-  width: 1080px;
+  width: 90%;
   color: white;
 }
 .f_logo {
@@ -12,6 +13,32 @@
 }
 .policy {
   text-align: right;
+}
+a {
+  text-decoration: none;
+  color: rgb(187, 182, 182);
+}
+.copy {
+  color: rgb(152, 153, 154);
+  font-size: 12px;
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  .row1Col {
+    width: 50%;
+    text-align: left;
+    padding-left: 14%;
+  }
+  .copy {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .policy {
+    text-align: center;
+  }
 }
 .row ul li {
   list-style: none;

@@ -21,7 +21,14 @@
   .meal__pack {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    width: auto;
+    width: 92%;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .meal__pack {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
   }
 }
 
@@ -29,6 +36,8 @@
   border-bottom: 5px solid black;
   border-radius: 5px;
   font-weight: 600;
+  padding: 2vh;
+  transition-duration: 1s;
 }
 .menubtn:focus {
   border-bottom: 5px solid black;

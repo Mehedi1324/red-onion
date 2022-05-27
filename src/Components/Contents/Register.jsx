@@ -8,21 +8,43 @@ const Register = () => {
     <div>
       <div className="registerPage py-5 ">
         <div className="reg_container">
-          <form onSubmit={handleSignUp} action="">
-            <input onBlur={nameHandle} type="text" placeholder="Full name" />
-            <br />
-            <input onBlur={emailHandle} type="email" placeholder="email" />
-            <br />
-            <input
-              onBlur={passwordHandle}
-              type="password"
-              placeholder="password"
-            />
-            <br />
+          <div className="cover">
+            <form className="regiForm" onSubmit={handleSignUp} action="">
+              <h3>Please Register</h3>
+              <input
+                className="regiInput"
+                onBlur={nameHandle}
+                type="text"
+                placeholder="Full name"
+              />
+              <br />
+              <input
+                className="regiInput"
+                onBlur={emailHandle}
+                type="email"
+                placeholder="email"
+              />
+              <br />
+              <input
+                className="regiInput"
+                onBlur={passwordHandle}
+                type="password"
+                placeholder="password"
+              />
+              <br />
 
-            <input onClick={handleSignUp} type="button" value="Sign Up" />
-          </form>
-          <Link to="/Login">Already Registered ?</Link>
+              <input
+                className="regiBtn btn btn-danger"
+                onClick={handleSignUp}
+                type="button"
+                value="Register"
+              />
+            </form>
+            <div className="my-4">
+              {' '}
+              <Link to="/Login">Already Registered ?</Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>

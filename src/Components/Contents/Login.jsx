@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import GoogleIcon from '@mui/icons-material/Google';
 import useAuth from '../../SharedComp/Hooks/useAuth';
 import '../StyleSheets/Login.css';
 const Login = () => {
@@ -11,34 +12,55 @@ const Login = () => {
     handlePasswordReset,
   } = useAuth();
   return (
-    <div className="loginPage py-5 ">
-      <div>
-        <form onSubmit={handleSignInWithEmail} action="">
-          <input onBlur={emailHandle} type="email" placeholder="email" />
-          <br />
+    <div className="loginContainer">
+      <div className="loginPage ">
+        <div className="cover">
+          <form
+            className="loginForm"
+            onSubmit={handleSignInWithEmail}
+            action=""
+          >
+            <h3>Please Log In</h3>
+            <input
+              className="inputBox"
+              onBlur={emailHandle}
+              type="email"
+              placeholder="email"
+            />
+            <br />
+            <input
+              className="inputBox"
+              onBlur={passwordHandle}
+              type="password"
+              placeholder="password"
+            />
+            <br />
+            <input
+              className="inputBtn btn btn-danger"
+              onClick={handleSignInWithEmail}
+              type="button"
+              value="Sign In"
+            />
+            <br />
+          </form>
           <input
-            onBlur={passwordHandle}
-            type="password"
-            placeholder="password"
-          />
-          <br />
-          <input
-            onClick={handleSignInWithEmail}
+            onClick={handlePasswordReset}
+            className="btn py-3 "
             type="button"
-            value="Sign In"
+            value="Forget Password"
           />
           <br />
-        </form>
-        <input
-          onClick={handlePasswordReset}
-          type="button"
-          value="Forget Password"
-        />
-        <br />
+          <p>
+            If you are not registered yet ,{' '}
+            <Link to="/register">Register Now !</Link>
+          </p>
 
-        <Link to="/register">Register Now ?</Link>
-        <br />
-        <button onClick={handleGoogleSignIn}>Sign in with Google</button>
+          <button className="googleBtn" onClick={handleGoogleSignIn}>
+            {' '}
+            <GoogleIcon className="googleIcon mx-1" />
+            Sign in with Google
+          </button>
+        </div>
       </div>
     </div>
   );
